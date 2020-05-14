@@ -1,0 +1,32 @@
+{
+   "name":"string",
+   "status":"active",
+   "policy_units":[
+      {
+         "policy_type":"standard/custom",
+         "applies_to":"key/value/both",
+         "providers":[
+            "aws"
+         ],
+         "conditions":[
+            {
+               "name":"string",
+               "values":[
+                  "string"
+               ],
+               "operator":"is"
+            }
+         ],
+         "schema":{
+            "edit_authorised_roles":[
+               "TEAM-SETUP-ADMIN"
+            ],
+            "delete_authorised_roles":[
+               "TEAM-SETUP-ADMIN"
+            ],
+            "is_required": true,
+            "provider_push": true
+         }
+      }
+   ]
+}
